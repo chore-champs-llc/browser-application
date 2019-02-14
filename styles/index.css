@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+#wrapper {
+  position: absolute;
+  overflow-x: auto;
+  overflow-y: auto;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#errorbanner {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 30px;
+  width: 90%;
+  padding: 10px;
+  margin: 0;
+  font-size: 22px;
+  color: #FFFFFF;
+  background-color: #B50202;
+  -webkit-transition: height 240ms, padding 240ms;
+  transition: height 240ms, padding 240ms;
+  text-align: center;
+  z-index: 2;
+}
+
+main {
+  position: relative;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  padding: 12px 20px;
+  height: 100px;
+}
+
+header img {
+  max-width: 60px;
+  max-height: 100%;
+}
+
+header #headertext {
+  text-align: center;
+  padding: 12px 20px;
+  width: 416px;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+input {
+  font-size: 1.1em;
+  color: #666;
+}
+
+input[type=text], input[type=password], select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 7px #ccc;
+}
+
+select {
+  height: 45px;
+  color: #666;
+  background-color: #fff;
+  font-size: 1.1em;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.formcontainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.options .toggleformoption {
+  color: indigo;
+  -webkit-transition: border-bottom 90ms;
+  transition: border-bottom 90ms;
+}
+
+.options .toggleformoption:hover {
+  border-bottom: 3px solid indigo;
+  cursor: pointer;
+}
